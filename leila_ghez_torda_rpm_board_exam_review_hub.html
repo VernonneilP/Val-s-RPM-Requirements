@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Leila Ghez Torda, RPm - BLEPP Review & PRC Roadmap 🌷✨</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tulip: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f472b6',
+                            400: '#e879f9',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            stem: '#10b981',
+                            leaf: '#059669'
+                        },
+                        psych: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        romantic: ['"Dancing Script"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .heart-particle {
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatUp 9s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0.5) rotate(0deg);
+                opacity: 0;
+            }
+            20% { opacity: 0.75; }
+            80% { opacity: 0.75; }
+            100% {
+                transform: translateY(-12vh) scale(1.2) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shimmerGold {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .rpm-shimmer {
+            background: linear-gradient(270deg, #db2777, #9333ea, #f59e0b, #ec4899);
+            background-size: 300% 300%;
+            animation: shimmerGold 6s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.90);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(251, 207, 232, 0.7);
+        }
+
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 32px -10px rgba(236, 72, 153, 0.25);
+        }
+
+        .custom-checkbox:checked + div {
+            background-color: #ec4899;
+            border-color: #ec4899;
+        }
+
+        .custom-checkbox:checked + div i {
+            display: block;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fce7f3;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #f472b6;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 min-h-screen text-slate-800 font-sans relative overflow-x-hidden pb-16">
+
+    <!-- Floating Tulip & Psychology Sparkle Particles -->
+    <div id="heart-container"></div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="max-w-4xl mx-auto px-4 py-6 sm:py-10 relative z-10">
+
+        <!-- HERO HEADER CARD -->
+        <header class="glass-card rounded-3xl p-6 sm:p-8 text-center shadow-xl border-pink-200 mb-6 relative overflow-hidden">
+            <!-- Decorative Corner Florals -->
+            <div class="absolute -top-6 -left-6 text-pink-300 opacity-30 text-7xl select-none">🌷</div>
+            <div class="absolute -bottom-6 -right-6 text-purple-300 opacity-30 text-7xl select-none">Ψ</div>
+            
+            <!-- Top Pill -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-pink-100 via-rose-100 to-purple-100 text-tulip-700 font-semibold text-xs sm:text-sm mb-4 shadow-xs border border-pink-200">
+                <i class="fa-solid fa-wand-magic-sparkles text-amber-500 animate-pulse"></i>
+                Dedicated to My Future Registered Psychometrician
+                <i class="fa-solid fa-heart text-pink-500 animate-bounce"></i>
+            </div>
+
+            <!-- Future Name Plate with RPm Title -->
+            <div onclick="celebrateRPm()" title="Click to celebrate Leila's future RPm license!" class="cursor-pointer group inline-block">
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-1 transition-transform group-hover:scale-105">
+                    <span class="rpm-shimmer">
+                        Leila Ghez Torda, RPm
+                    </span>
+                </h1>
+                <p class="text-[11px] sm:text-xs text-pink-500 font-semibold tracking-wider uppercase mb-2">
+                    <i class="fa-solid fa-sparkles"></i> Tap her name for a celebration shower! <i class="fa-solid fa-sparkles"></i>
+                </p>
+            </div>
+
+            <p class="font-romantic text-2xl sm:text-3xl text-tulip-600 font-bold mb-4">
+                BS Psychology • Cum Laude • Future BLEPP Topnotcher 🎓🌷
+            </p>
+
+            <!-- Badges Row -->
+            <div class="flex flex-wrap justify-center items-center gap-2 text-xs sm:text-sm text-slate-600 font-medium mb-6">
+                <span class="bg-white/90 px-3.5 py-1.5 rounded-full border border-pink-200 shadow-xs flex items-center gap-1.5">
+                    <i class="fa-solid fa-building-columns text-tulip-500"></i> NU MOA (BS Psych)
+                </span>
+                <span class="bg-white/90 px-3.5 py-1.5 rounded-full border border-purple-200 shadow-xs flex items-center gap-1.5">
+                    <i class="fa-solid fa-brain text-purple-500"></i> RA 10029 (Psychology Law)
+                </span>
+                <span class="bg-white/90 px-3.5 py-1.5 rounded-full border border-amber-200 shadow-xs flex items-center gap-1.5">
+                    <i class="fa-solid fa-id-card text-amber-500"></i> PRC BLEPP Licensure
+                </span>
+            </div>
+
+            <!-- Sweet Message Box -->
+            <div class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed bg-gradient-to-r from-rose-50/80 via-pink-50/80 to-purple-50/80 p-4 sm:p-5 rounded-2xl border border-pink-200/80 shadow-inner relative">
+                <p class="italic">
+                    "My dearest Val, from watching you graduate <strong>Cum Laude</strong> to cheering you on for your <strong>Registered Psychometrician (RPm)</strong> board exam—I have never doubted your brilliance for a single second. Take it one topic, one practice test, and one tulip break at a time. I'm right here with you every step of the way!" 💖🌷
+                </p>
+            </div>
+
+            <!-- Status & Actions Bar -->
+            <div class="mt-6 flex flex-wrap justify-between items-center gap-3 pt-4 border-t border-pink-100 text-xs text-slate-500">
+                <div class="flex items-center gap-2 flex-wrap" id="sync-status-container">
+                    <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 border border-pink-200 shadow-xs" id="sync-status-badge">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" id="sync-dot"></span>
+                        <span class="font-semibold text-emerald-700" id="sync-status-text">Firebase Sync Active</span>
+                    </div>
+                    <button onclick="manualSync()" id="btn-manual-sync" title="Sync with Firebase Cloud Database" class="px-3 py-1.5 rounded-full bg-pink-100 text-tulip-700 hover:bg-pink-200 font-bold transition active:scale-95 flex items-center gap-1.5 shadow-xs border border-pink-200">
+                        <i class="fa-solid fa-arrows-rotate text-tulip-600" id="sync-icon"></i>
+                        <span>Sync Now</span>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button onclick="triggerHeartShower()" class="px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 via-tulip-600 to-purple-600 text-white font-semibold shadow-md hover:shadow-lg transition-all active:scale-95 flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-heart"></i> Cheer for My Future RPm!
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- VERNON'S PEP TALK JAR (Interactive Emotional Support Bar) -->
+        <section class="glass-card rounded-3xl p-5 mb-6 shadow-md border-pink-200 bg-gradient-to-r from-white/90 via-pink-50/50 to-purple-50/50">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+                <div>
+                    <h2 class="text-sm font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-jar-wheat text-pink-500"></i> Vernon's Study Pep-Talk Jar for Val 💌
+                    </h2>
+                    <p class="text-xs text-slate-500">Tap how you're feeling right now during review for an instant reminder:</p>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                    <button onclick="showPepTalk('tired')" class="px-3 py-1.5 rounded-full bg-rose-100 hover:bg-rose-200 text-rose-700 text-xs font-bold transition active:scale-95">
+                        🥱 Feeling Sleepy
+                    </button>
+                    <button onclick="showPepTalk('overwhelmed')" class="px-3 py-1.5 rounded-full bg-purple-100 hover:bg-purple-200 text-purple-700 text-xs font-bold transition active:scale-95">
+                        📚 Info Overload
+                    </button>
+                    <button onclick="showPepTalk('doubt')" class="px-3 py-1.5 rounded-full bg-amber-100 hover:bg-amber-200 text-amber-800 text-xs font-bold transition active:scale-95">
+                        🥺 Nervous
+                    </button>
+                    <button onclick="showPepTalk('hug')" class="px-3 py-1.5 rounded-full bg-pink-500 hover:bg-pink-600 text-white text-xs font-bold transition active:scale-95 shadow-xs">
+                        🤗 Need a Hug
+                    </button>
+                </div>
+            </div>
+            <div id="pep-talk-display" class="hidden p-3.5 rounded-2xl bg-white/90 border border-pink-200 text-xs sm:text-sm text-slate-700 font-medium flex items-center justify-between gap-3 shadow-xs transition-all">
+                <span id="pep-talk-text"></span>
+                <button onclick="document.getElementById('pep-talk-display').classList.add('hidden')" class="text-slate-400 hover:text-slate-600">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- DUAL PROGRESS TRACKERS (PRC Requirements + BLEPP 4 Subjects Mastery) -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <!-- PRC Checklist Progress -->
+            <div class="glass-card rounded-2xl p-5 shadow-md border-pink-100">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs sm:text-sm font-bold text-slate-700 flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-tulip-500"></i> PRC Filing & Milestones
+                    </span>
+                    <span id="progress-text" class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-pink-100 text-tulip-700">
+                        0 of 14 (0%)
+                    </span>
+                </div>
+                <div class="w-full bg-pink-100 rounded-full h-3 p-0.5 overflow-hidden">
+                    <div id="progress-bar" class="bg-gradient-to-r from-pink-400 to-tulip-600 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- BLEPP Subject Review Progress -->
+            <div class="glass-card rounded-2xl p-5 shadow-md border-purple-100">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs sm:text-sm font-bold text-slate-700 flex items-center gap-2">
+                        <i class="fa-solid fa-brain text-purple-500"></i> BLEPP 4-Subject Mastery
+                    </span>
+                    <span id="study-progress-text" class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-700">
+                        0 of 16 Topics (0%)
+                    </span>
+                </div>
+                <div class="w-full bg-purple-100 rounded-full h-3 p-0.5 overflow-hidden">
+                    <div id="study-progress-bar" class="bg-gradient-to-r from-purple-400 via-pink-500 to-emerald-400 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVIGATION TABS -->
+        <div class="flex flex-wrap border-b border-pink-200 mb-6 gap-1.5 sm:gap-2">
+            <button onclick="switchTab('subjects-tab')" id="btn-subjects-tab" class="tab-btn active font-bold text-xs sm:text-sm px-4 py-2.5 rounded-t-xl bg-white border-t-2 border-x border-pink-300 text-tulip-700 shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-book-open-reader text-purple-500"></i> 4 Board Subjects Tracker
+            </button>
+            <button onclick="switchTab('checklist-tab')" id="btn-checklist-tab" class="tab-btn font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-t-xl text-slate-500 hover:text-tulip-600 transition flex items-center gap-2">
+                <i class="fa-solid fa-list-check text-tulip-500"></i> PRC BLEPP Checklist
+            </button>
+            <button onclick="switchTab('pomodoro-tab')" id="btn-pomodoro-tab" class="tab-btn font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-t-xl text-slate-500 hover:text-tulip-600 transition flex items-center gap-2">
+                <i class="fa-solid fa-clock text-emerald-500"></i> Tulip Study Timer
+            </button>
+            <button onclick="switchTab('guide-tab')" id="btn-guide-tab" class="tab-btn font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-t-xl text-slate-500 hover:text-tulip-600 transition flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-amber-500"></i> BLEPP Exam Guide
+            </button>
+            <button onclick="switchTab('notes-tab')" id="btn-notes-tab" class="tab-btn font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-t-xl text-slate-500 hover:text-tulip-600 transition flex items-center gap-2">
+                <i class="fa-solid fa-envelope-open-text text-pink-400"></i> Love & Study Notes 💌
+            </button>
+        </div>
+
+        <!-- TAB 1: 4 BLEPP BOARD SUBJECTS SYLLABUS TRACKER -->
+        <div id="subjects-tab" class="tab-content block space-y-6">
+            <div class="glass-card rounded-3xl p-6 shadow-lg border-pink-200">
+                <div class="flex flex-wrap justify-between items-center gap-2 mb-4 pb-3 border-b border-pink-100">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-purple-600"></i> BLEPP 4 Core Subjects & High-Yield Topics
+                        </h2>
+                        <p class="text-xs text-slate-500">Check off each core module as you finish reviewing it! Synced live across our devices.</p>
+                    </div>
+                    <span class="text-xs font-bold px-3 py-1 rounded-full bg-purple-100 text-purple-700">
+                        Total: 450 Board Items
+                    </span>
+                </div>
+
+                <!-- Dynamic 4 Subjects Grid -->
+                <div id="subjects-container" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: PRC DOCUMENT CHECKLIST & APPLICATION STEPS -->
+        <div id="checklist-tab" class="tab-content hidden space-y-8">
+            
+            <div class="glass-card rounded-3xl p-6 shadow-lg border-pink-200">
+                <div class="flex items-center gap-3 mb-4 pb-3 border-b border-pink-100">
+                    <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-tulip-600 font-bold text-lg">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">Part 1: PRC BLEPP Documentary Requirements</h2>
+                        <p class="text-xs text-slate-500">Essential documents required by the Professional Regulation Commission for Psychometrician applicants</p>
+                    </div>
+                </div>
+
+                <div class="space-y-3" id="doc-checklist-container">
+                    <!-- Dynamic rendering -->
+                </div>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 shadow-lg border-pink-200">
+                <div class="flex items-center gap-3 mb-4 pb-3 border-b border-pink-100">
+                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold text-lg">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">Part 2: Road to Becoming Leila Ghez Torda, RPm</h2>
+                        <p class="text-xs text-slate-500">Step-by-step milestones from review season to oath-taking day!</p>
+                    </div>
+                </div>
+
+                <div class="space-y-3" id="step-checklist-container">
+                    <!-- Dynamic rendering -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- TAB 3: COZY TULIP POMODORO STUDY TIMER -->
+        <div id="pomodoro-tab" class="tab-content hidden space-y-6">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-lg border-pink-200 text-center max-w-xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold mb-3">
+                    <i class="fa-solid fa-seedling"></i> Cozy Review Companion for Val
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-1">Tulip Focus Timer 🌷</h2>
+                <p class="text-xs text-slate-500 mb-6">Pace your BLEPP review so you stay sharp without burning out!</p>
+
+                <!-- Mode Selector -->
+                <div class="flex justify-center gap-2 mb-6">
+                    <button onclick="setTimerMode(25, 'Deep Review Session 📚')" id="mode-25" class="px-4 py-1.5 rounded-full text-xs font-bold bg-tulip-600 text-white shadow-xs transition">
+                        25m Study
+                    </button>
+                    <button onclick="setTimerMode(50, 'Mock Drill Block 🧠')" id="mode-50" class="px-4 py-1.5 rounded-full text-xs font-bold bg-pink-100 text-tulip-700 hover:bg-pink-200 transition">
+                        50m Deep Study
+                    </button>
+                    <button onclick="setTimerMode(5, 'Tulip Water Break 🌷')" id="mode-5" class="px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 hover:bg-emerald-200 transition">
+                        5m Break
+                    </button>
+                    <button onclick="setTimerMode(15, 'Rest & Stretch 💖')" id="mode-15" class="px-4 py-1.5 rounded-full text-xs font-bold bg-purple-100 text-purple-700 hover:bg-purple-200 transition">
+                        15m Long Break
+                    </button>
+                </div>
+
+                <!-- Big Clock Display -->
+                <div class="py-8 px-6 rounded-3xl bg-gradient-to-br from-pink-50 via-white to-purple-50 border border-pink-200 shadow-inner mb-6">
+                    <p id="timer-label" class="text-xs font-bold text-tulip-600 uppercase tracking-wider mb-2">Deep Review Session 📚</p>
+                    <div id="timer-display" class="text-6xl sm:text-7xl font-extrabold text-slate-800 tracking-tight font-mono">
+                        25:00
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="flex justify-center gap-3">
+                    <button onclick="toggleTimer()" id="btn-timer-toggle" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-tulip-500 to-pink-600 text-white font-bold text-sm shadow-md hover:opacity-95 active:scale-95 transition flex items-center gap-2">
+                        <i class="fa-solid fa-play" id="timer-play-icon"></i>
+                        <span id="timer-btn-text">Start Review</span>
+                    </button>
+                    <button onclick="resetTimer()" class="px-5 py-3 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm transition active:scale-95 flex items-center gap-2">
+                        <i class="fa-solid fa-rotate-left"></i> Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: BLEPP EXAM WEIGHTS, PASSING SCORE & TIPS -->
+        <div id="guide-tab" class="tab-content hidden space-y-6">
+            <div class="glass-card rounded-3xl p-6 shadow-lg border-pink-200">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-scale-balanced text-tulip-500"></i> Everything About the RPm Board Exam (BLEPP)
+                </h2>
+
+                <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                    <div class="p-4 bg-white rounded-2xl border border-pink-100 shadow-xs">
+                        <h3 class="font-bold text-base text-tulip-700 mb-2">Official Subject Weights & Breakdown</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="p-3 rounded-xl bg-purple-50 border border-purple-100 flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-purple-900 block">1. Psychological Assessment</span>
+                                    <span class="text-xs text-slate-500">150 Items • Heaviest Subject!</span>
+                                </div>
+                                <span class="text-xl font-extrabold text-purple-700">40%</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-pink-50 border border-pink-100 flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-pink-900 block">2. Abnormal Psychology</span>
+                                    <span class="text-xs text-slate-500">100 Items • DSM-5-TR Focus</span>
+                                </div>
+                                <span class="text-xl font-extrabold text-pink-700">20%</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-rose-50 border border-rose-100 flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-rose-900 block">3. Developmental Psychology</span>
+                                    <span class="text-xs text-slate-500">100 Items • Lifespan Theories</span>
+                                </div>
+                                <span class="text-xl font-extrabold text-rose-700">20%</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-100 flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-emerald-900 block">4. Industrial / Org Psychology</span>
+                                    <span class="text-xs text-slate-500">100 Items • HR & Workplace</span>
+                                </div>
+                                <span class="text-xl font-extrabold text-emerald-700">20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-2xl border border-pink-100 shadow-xs">
+                        <h3 class="font-bold text-base text-tulip-700 mb-1">Target Passing Score Rule (RA 10029)</h3>
+                        <p>To pass the Psychometrician Licensure Examination, an examinee must obtain a <strong>weighted general average of at least 75%</strong> across all four subjects, with <strong>no grade lower than 60%</strong> in any given subject. (And our Cum Laude is aiming for Topnotcher! 🌟)</p>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-2xl border border-pink-100 shadow-xs">
+                        <h3 class="font-bold text-base text-tulip-700 mb-1">Special BLEPP Tip: The 3 Good Moral Certificates!</h3>
+                        <p class="mb-2">Unlike other board exams, PRC BLEPP strictly requires <strong>three (3) separate Certificates of Good Moral Character</strong> from any of the following:</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-600">
+                            <li><strong>School / University:</strong> From National University MOA (Student Affairs / Dean's Office)</li>
+                            <li><strong>Barangay:</strong> Barangay Good Moral / Clearance where she resides</li>
+                            <li><strong>Church / Parish OR Employer:</strong> Signed by the parish priest/pastor or current employer</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-2xl border border-pink-100 shadow-xs">
+                        <h3 class="font-bold text-base text-tulip-700 mb-1">PRC Examination Fee Breakdown</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-2">
+                            <div class="p-3 bg-pink-50 rounded-xl text-center">
+                                <span class="block text-xs text-slate-500">PRC Application Fee</span>
+                                <span class="text-xl font-bold text-tulip-700">₱900.00</span>
+                            </div>
+                            <div class="p-3 bg-purple-50 rounded-xl text-center">
+                                <span class="block text-xs text-slate-500">Metered Documentary Stamp</span>
+                                <span class="text-xl font-bold text-purple-700">~₱30–₱50</span>
+                            </div>
+                            <div class="p-3 bg-emerald-50 rounded-xl text-center">
+                                <span class="block text-xs text-slate-500">Initial PRC Registration (After Passing!)</span>
+                                <span class="text-xl font-bold text-emerald-700">₱1,050.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 5: LOVE NOTES & STUDY PEP TALKS WALL -->
+        <div id="notes-tab" class="tab-content hidden space-y-6">
+            <div class="glass-card rounded-3xl p-6 shadow-lg border-pink-200">
+                <div class="flex justify-between items-center mb-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-heart text-pink-500"></i> RPm Study Notes & Love Wall
+                        </h2>
+                        <p class="text-xs text-slate-500">Leave sweet encouragement, mnemonics, or review reminders for each other!</p>
+                    </div>
+                </div>
+
+                <!-- Note Form -->
+                <div class="bg-white p-4 rounded-2xl border border-pink-100 shadow-sm mb-6">
+                    <div class="flex flex-col sm:flex-row gap-2 mb-2">
+                        <input type="text" id="note-author" placeholder="Your Name (Vernon / Val)" class="sm:w-1/3 px-3 py-2 text-sm rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-tulip-400" value="Vernon">
+                        <input type="text" id="note-text" placeholder="Write a sweet cheer or study reminder for our future RPm..." class="sm:w-2/3 px-3 py-2 text-sm rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-tulip-400">
+                    </div>
+                    <button onclick="postNote()" class="w-full py-2.5 bg-gradient-to-r from-tulip-500 via-pink-600 to-purple-600 text-white font-bold rounded-xl text-sm shadow-md hover:opacity-95 active:scale-98 transition flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Post to Val's RPm Wall
+                    </button>
+                </div>
+
+                <!-- Notes List -->
+                <div id="notes-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Dynamic rendering -->
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center text-xs text-slate-500 space-y-1">
+            <p class="font-medium">Crafted with endless love, prayers, and tulips for <strong>Future Leila Ghez Torda, RPm</strong> 🌷✨</p>
+            <p>National University MOA • BS Psychology Cum Laude • Future Registered Psychometrician</p>
+        </footer>
+
+    </div>
+
+    <!-- FIREBASE REALTIME DB SYNC & APP LOGIC -->
+    <script type="module">
+        // CONNECTS TO YOUR VERIFIED FIREBASE REALTIME DB UNDER A DEDICATED RPm NODE
+        const FIREBASE_URL = 'https://muymuy-4817f-default-rtdb.asia-southeast1.firebasedatabase.app/val_rpm_roadmap.json';
+
+        let checkedState = {};
+        let studyState = {};
+        let notesState = [
+            { id: 'rpm_note_1', author: 'Vernon', text: 'Future Leila Ghez Torda, RPm! I am already so proud of you. Take your review one day at a time, my love! 🌷🎓', timestamp: 'Pinned with Love' },
+            { id: 'rpm_note_2', author: 'Vernon', text: 'Remember: Psychological Assessment is 40% of the board exam! You got this, my Cum Laude! 💖✨', timestamp: 'Study Tip' }
+        ];
+
+        let isSyncing = false;
+        let debounceTimer = null;
+
+        // 4 BLEPP CORE BOARD SUBJECTS & HIGH-YIELD TOPICS
+        const BLEPP_SUBJECTS = [
+            {
+                id: 'subj_psych_assess',
+                title: '1. Psychological Assessment',
+                weight: '40% • 150 Items',
+                color: 'purple',
+                icon: 'fa-chart-pie',
+                topics: [
+                    { id: 'pa_1', name: 'Psychometrics, Reliability, Validity & Norms' },
+                    { id: 'pa_2', name: 'Intelligence & Cognitive Tests (WAIS, WISC, Stanford-Binet, Raven\'s)' },
+                    { id: 'pa_3', name: 'Personality Assessment (MMPI, NEO-PI-R, 16PF, Projective Tests)' },
+                    { id: 'pa_4', name: 'PAPR Code of Ethics, Test Administration & Report Writing' }
+                ]
+            },
+            {
+                id: 'subj_abn_psych',
+                title: '2. Abnormal Psychology',
+                weight: '20% • 100 Items',
+                color: 'pink',
+                icon: 'fa-brain',
+                topics: [
+                    { id: 'ab_1', name: 'DSM-5-TR Neurodevelopmental & Schizophrenia Spectrum' },
+                    { id: 'ab_2', name: 'Bipolar, Depressive, Anxiety, OCD & Trauma Disorders' },
+                    { id: 'ab_3', name: 'Personality Disorders (Clusters A, B, C) & Dissociative/Somatic' },
+                    { id: 'ab_4', name: 'Eating, Sleep, Substance-Related & Theoretical Perspectives' }
+                ]
+            },
+            {
+                id: 'subj_dev_psych',
+                title: '3. Developmental Psychology',
+                weight: '20% • 100 Items',
+                color: 'rose',
+                icon: 'fa-seedling',
+                topics: [
+                    { id: 'dv_1', name: 'Major Lifespan Theories (Piaget, Erikson, Vygotsky, Kohlberg, Bowlby)' },
+                    { id: 'dv_2', name: 'Prenatal, Infancy & Early Childhood Milestones' },
+                    { id: 'dv_3', name: 'Middle Childhood & Adolescence (Identity & Puberty)' },
+                    { id: 'dv_4', name: 'Early, Middle & Late Adulthood, Aging & End-of-Life' }
+                ]
+            },
+            {
+                id: 'subj_io_psych',
+                title: '4. Industrial / Organizational Psych',
+                weight: '20% • 100 Items',
+                color: 'emerald',
+                icon: 'fa-briefcase',
+                topics: [
+                    { id: 'io_1', name: 'Job Analysis, Recruitment, Selection & Interviewing' },
+                    { id: 'io_2', name: 'Training, Development & Performance Appraisal Systems' },
+                    { id: 'io_3', name: 'Work Motivation, Job Satisfaction, Leadership & Teamwork' },
+                    { id: 'io_4', name: 'Organizational Culture, Change & Philippine Labor Basics' }
+                ]
+            }
+        ];
+
+        // PRC BLEPP CHECKLIST ITEMS
+        const DEFAULT_CHECKLIST = [
+            { id: "rpm_doc_1", category: "doc", title: "Official Transcript of Records (TOR) for Board Exam", desc: "Request from NU MOA Registrar with scanned photo and strict remarks: 'FOR BOARD EXAMINATION PURPOSES'.", badge: "NU MOA Registrar", badgeColor: "bg-purple-100 text-purple-700" },
+            { id: "rpm_doc_2", category: "doc", title: "PSA Birth Certificate", desc: "Original and clear photocopy issued on official PSA security paper.", badge: "PSA Official", badgeColor: "bg-blue-100 text-blue-700" },
+            { id: "rpm_doc_3", category: "doc", title: "Valid NBI Clearance", desc: "Original NBI Clearance (Multi-Purpose) valid for at least 6 months on the date of filing.", badge: "Valid 6+ Months", badgeColor: "bg-emerald-100 text-emerald-700" },
+            { id: "rpm_doc_4", category: "doc", title: "Good Moral Cert #1: From University (NU MOA)", desc: "First of 3 required Good Moral Certificates—issued by NU MOA Student Affairs / Dean's Office.", badge: "1 of 3 Good Moral", badgeColor: "bg-pink-100 text-pink-700" },
+            { id: "rpm_doc_5", category: "doc", title: "Good Moral Cert #2: From Barangay", desc: "Second of 3 required Good Moral Certificates—issued by your local Barangay Hall with dry seal.", badge: "2 of 3 Good Moral", badgeColor: "bg-pink-100 text-pink-700" },
+            { id: "rpm_doc_6", category: "doc", title: "Good Moral Cert #3: From Parish Church or Employer", desc: "Third of 3 required Good Moral Certificates—signed by Parish Priest/Pastor or Employer.", badge: "3 of 3 Good Moral", badgeColor: "bg-pink-100 text-pink-700" },
+            { id: "rpm_doc_7", category: "doc", title: "Passport-Size ID Photos (White Background)", desc: "In decent collared attire, full name tag (First Name, Middle Initial, Last Name), ears visible.", badge: "Digital + Printed", badgeColor: "bg-rose-100 text-rose-700" },
+            { id: "rpm_doc_8", category: "doc", title: "Community Tax Certificate (Cedula) & Doc Stamps", desc: "Current year Cedula and 2-3 metered documentary stamps (available at PRC).", badge: "Supporting Docs", badgeColor: "bg-amber-100 text-amber-700" },
+            
+            { id: "rpm_step_1", category: "step", title: "Step 1: Set Up Review Schedule & Review Center / Materials", desc: "Organize reviewers for Psychological Assessment, Abnormal, Dev Psych, and I/O Psych.", badge: "Review Season", badgeColor: "bg-purple-100 text-purple-700" },
+            { id: "rpm_step_2", category: "step", title: "Step 2: Register on PRC LERIS (online.prc.gov.ph)", desc: "Create LERIS profile, upload photo, select Psychometrician (BLEPP) application, and book appointment.", badge: "PRC Online", badgeColor: "bg-blue-100 text-blue-700" },
+            { id: "rpm_step_3", category: "step", title: "Step 3: Pay ₱900 PRC Examination Fee", desc: "Pay online via LERIS payment channels (Maya, GCash, LandBank) and print Application Form.", badge: "Fee: ₱900", badgeColor: "bg-teal-100 text-teal-700" },
+            { id: "rpm_step_4", category: "step", title: "Step 4: Submit Documents at PRC & Claim NOA", desc: "Appear at PRC appointment with originals & photocopies to receive your official Notice of Admission (NOA)!", badge: "NOA Issued!", badgeColor: "bg-pink-100 text-pink-700" },
+            { id: "rpm_step_5", category: "step", title: "Step 5: Conquer the 2-Day BLEPP Board Exam!", desc: "Prepare transparent envelope, pencils (Mongol #2), basic calculator, NOA, and prayers. You got this, Val!", badge: "Exam Days", badgeColor: "bg-rose-100 text-rose-700" },
+            { id: "rpm_step_6", category: "step", title: "Step 6: Pass the Boards, Oath Taking & Claim PRC ID!", desc: "See 'TORDA, LEILA GHEZ' on the official list of passers and officially become Leila Ghez Torda, RPm!", badge: "Registered RPm! 🎓", badgeColor: "bg-amber-100 text-amber-800" }
+        ];
+
+        async function initSyncEngine() {
+            loadFromLocalStorage();
+            renderSubjects();
+            renderChecklist();
+            updateProgressBars();
+            renderNotes(notesState);
+
+            await fetchPublicCloudData();
+            
+            // Poll Firebase Realtime DB every 8 seconds
+            setInterval(() => {
+                if (!document.hidden) {
+                    fetchPublicCloudData();
+                }
+            }, 8000);
+        }
+
+        async function fetchPublicCloudData() {
+            if (document.hidden || isSyncing) return;
+            isSyncing = true;
+
+            try {
+                const res = await fetch(FIREBASE_URL);
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data && typeof data === 'object') {
+                        if (data.checklist && typeof data.checklist === 'object') {
+                            checkedState = { ...checkedState, ...data.checklist };
+                            localStorage.setItem('val_rpm_checklist_backup', JSON.stringify(checkedState));
+                        }
+                        if (data.study && typeof data.study === 'object') {
+                            studyState = { ...studyState, ...data.study };
+                            localStorage.setItem('val_rpm_study_backup', JSON.stringify(studyState));
+                        }
+                        if (Array.isArray(data.notes) && data.notes.length > 0) {
+                            notesState = data.notes;
+                            localStorage.setItem('val_rpm_notes_backup', JSON.stringify(notesState));
+                        }
+                        updateSyncBadge('Firebase Sync Active', 'emerald');
+                    }
+                } else {
+                    updateSyncBadge('Saved Locally', 'amber');
+                }
+            } catch (e) {
+                updateSyncBadge('Saved Locally', 'amber');
+            } finally {
+                isSyncing = false;
+            }
+
+            renderSubjects();
+            renderChecklist();
+            updateProgressBars();
+            renderNotes(notesState);
+        }
+
+        function scheduleCloudSave() {
+            if (debounceTimer) clearTimeout(debounceTimer);
+            updateSyncBadge('Saving to Firebase...', 'blue');
+            debounceTimer = setTimeout(() => {
+                executeSaveToCloud();
+            }, 800);
+        }
+
+        async function executeSaveToCloud() {
+            if (isSyncing) {
+                debounceTimer = setTimeout(executeSaveToCloud, 500);
+                return;
+            }
+
+            isSyncing = true;
+            updateSyncBadge('Saving to Firebase...', 'blue');
+
+            try {
+                const res = await fetch(FIREBASE_URL, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        checklist: checkedState,
+                        study: studyState,
+                        notes: notesState
+                    })
+                });
+
+                if (res.ok) {
+                    updateSyncBadge('Firebase Sync Active', 'emerald');
+                } else {
+                    updateSyncBadge('Saved Locally', 'amber');
+                }
+            } catch (e) {
+                updateSyncBadge('Saved Locally', 'amber');
+            } finally {
+                isSyncing = false;
+            }
+        }
+
+        function loadFromLocalStorage() {
+            try {
+                const savedCheck = localStorage.getItem('val_rpm_checklist_backup');
+                if (savedCheck) checkedState = JSON.parse(savedCheck) || {};
+            } catch(e) {}
+            try {
+                const savedStudy = localStorage.getItem('val_rpm_study_backup');
+                if (savedStudy) studyState = JSON.parse(savedStudy) || {};
+            } catch(e) {}
+            try {
+                const savedNotes = localStorage.getItem('val_rpm_notes_backup');
+                if (savedNotes) {
+                    const parsed = JSON.parse(savedNotes);
+                    if (Array.isArray(parsed) && parsed.length > 0) notesState = parsed;
+                }
+            } catch(e) {}
+        }
+
+        function updateSyncBadge(text, color) {
+            const badgeText = document.getElementById('sync-status-text');
+            const syncDot = document.getElementById('sync-dot');
+            if (badgeText && syncDot) {
+                badgeText.textContent = text;
+                if (color === 'emerald') {
+                    syncDot.className = "w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping";
+                    badgeText.className = "font-semibold text-emerald-700";
+                } else if (color === 'amber') {
+                    syncDot.className = "w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse";
+                    badgeText.className = "font-semibold text-amber-700";
+                } else if (color === 'blue') {
+                    syncDot.className = "w-2.5 h-2.5 rounded-full bg-blue-500 animate-ping";
+                    badgeText.className = "font-semibold text-blue-700";
+                }
+            }
+        }
+
+        window.manualSync = async function() {
+            const icon = document.getElementById('sync-icon');
+            if (icon) icon.classList.add('animate-spin');
+            updateSyncBadge('Syncing Firebase...', 'blue');
+            
+            await fetchPublicCloudData();
+
+            setTimeout(() => {
+                if (icon) icon.classList.remove('animate-spin');
+                updateSyncBadge('Synced Just Now! ✨', 'emerald');
+                setTimeout(() => updateSyncBadge('Firebase Sync Active', 'emerald'), 2500);
+            }, 500);
+        };
+
+        window.toggleStudyTopic = function(topicId) {
+            const isDone = !studyState[topicId];
+            studyState[topicId] = isDone;
+
+            if (isDone) {
+                confetti({
+                    particleCount: 25,
+                    spread: 55,
+                    origin: { y: 0.7 },
+                    colors: ['#8b5cf6', '#ec4899', '#10b981']
+                });
+            }
+
+            localStorage.setItem('val_rpm_study_backup', JSON.stringify(studyState));
+            renderSubjects();
+            updateProgressBars();
+            scheduleCloudSave();
+        };
+
+        window.toggleCheck = function(id) {
+            const isChecked = !checkedState[id];
+            checkedState[id] = isChecked;
+
+            if (isChecked) {
+                confetti({
+                    particleCount: 30,
+                    spread: 60,
+                    origin: { y: 0.7 },
+                    colors: ['#f472b6', '#ec4899', '#10b981']
+                });
+            }
+
+            localStorage.setItem('val_rpm_checklist_backup', JSON.stringify(checkedState));
+            renderChecklist();
+            updateProgressBars();
+            scheduleCloudSave();
+        };
+
+        function renderSubjects() {
+            const container = document.getElementById('subjects-container');
+            if (!container) return;
+
+            container.innerHTML = BLEPP_SUBJECTS.map(subj => {
+                const completedCount = subj.topics.filter(t => !!studyState[t.id]).length;
+                const pct = Math.round((completedCount / subj.topics.length) * 100);
+
+                const topicsHtml = subj.topics.map(t => {
+                    const done = !!studyState[t.id];
+                    return `
+                        <div onclick="toggleStudyTopic('${t.id}')" class="p-2.5 rounded-xl border ${done ? 'bg-pink-50/70 border-pink-300' : 'bg-white border-slate-100'} hover:border-pink-300 cursor-pointer flex items-center gap-2.5 transition select-none">
+                            <div class="w-5 h-5 rounded-md border-2 ${done ? 'bg-tulip-500 border-tulip-500' : 'border-pink-300'} flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-white text-[10px] ${done ? 'block' : 'hidden'}"></i>
+                            </div>
+                            <span class="text-xs font-medium ${done ? 'line-through text-slate-400' : 'text-slate-700'}">${t.name}</span>
+                        </div>
+                    `;
+                }).join('');
+
+                return `
+                    <div class="p-5 rounded-2xl bg-white/95 border border-pink-100 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start gap-2 mb-2">
+                                <h3 class="font-bold text-slate-800 text-sm sm:text-base flex items-center gap-2">
+                                    <i class="fa-solid ${subj.icon} text-tulip-500"></i> ${subj.title}
+                                </h3>
+                                <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-pink-100 text-tulip-700 shrink-0">
+                                    ${subj.weight}
+                                </span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2 mb-4 overflow-hidden">
+                                <div class="bg-gradient-to-r from-tulip-500 to-purple-500 h-2 rounded-full transition-all duration-500" style="width: ${pct}%"></div>
+                            </div>
+                            <div class="space-y-2">
+                                ${topicsHtml}
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between items-center text-[11px] text-slate-500 font-semibold">
+                            <span>Subject Mastery</span>
+                            <span class="text-tulip-600">${completedCount} / ${subj.topics.length} Modules (${pct}%)</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderChecklist() {
+            const docContainer = document.getElementById('doc-checklist-container');
+            const stepContainer = document.getElementById('step-checklist-container');
+
+            if (!docContainer || !stepContainer) return;
+
+            docContainer.innerHTML = '';
+            stepContainer.innerHTML = '';
+
+            DEFAULT_CHECKLIST.forEach(item => {
+                const isChecked = !!checkedState[item.id];
+                const html = `
+                    <div onclick="toggleCheck('${item.id}')" class="p-4 rounded-2xl bg-white border ${isChecked ? 'border-tulip-400 bg-pink-50/50' : 'border-pink-100'} glass-card-hover cursor-pointer flex items-start gap-3.5 transition-all select-none shadow-2xs">
+                        <div class="relative pt-0.5">
+                            <input type="checkbox" ${isChecked ? 'checked' : ''} class="sr-only custom-checkbox">
+                            <div class="w-6 h-6 rounded-lg border-2 border-pink-300 flex items-center justify-center transition-colors">
+                                <i class="fa-solid fa-check text-white text-xs ${isChecked ? 'block' : 'hidden'}"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap justify-between items-start gap-2">
+                                <h3 class="font-bold text-sm sm:text-base ${isChecked ? 'line-through text-slate-400' : 'text-slate-800'}">
+                                    ${item.title}
+                                </h3>
+                                <span class="text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full font-bold ${item.badgeColor}">
+                                    ${item.badge}
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1 leading-relaxed ${isChecked ? 'text-slate-400' : ''}">
+                                ${item.desc}
+                            </p>
+                        </div>
+                    </div>
+                `;
+
+                if (item.category === 'doc') {
+                    docContainer.insertAdjacentHTML('beforeend', html);
+                } else {
+                    stepContainer.insertAdjacentHTML('beforeend', html);
+                }
+            });
+        }
+
+        function updateProgressBars() {
+            // PRC Checklist Progress
+            const totalCheck = DEFAULT_CHECKLIST.length;
+            const completedCheck = DEFAULT_CHECKLIST.filter(item => !!checkedState[item.id]).length;
+            const pctCheck = Math.round((completedCheck / totalCheck) * 100);
+
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+
+            if (progressBar && progressText) {
+                progressBar.style.width = `${pctCheck}%`;
+                progressText.innerText = `${completedCheck} of ${totalCheck} (${pctCheck}%)`;
+            }
+
+            // BLEPP 4-Subject Topics Progress
+            const allTopics = BLEPP_SUBJECTS.flatMap(s => s.topics);
+            const totalTopics = allTopics.length;
+            const completedTopics = allTopics.filter(t => !!studyState[t.id]).length;
+            const pctTopics = Math.round((completedTopics / totalTopics) * 100);
+
+            const studyBar = document.getElementById('study-progress-bar');
+            const studyText = document.getElementById('study-progress-text');
+
+            if (studyBar && studyText) {
+                studyBar.style.width = `${pctTopics}%`;
+                studyText.innerText = `${completedTopics} of ${totalTopics} Topics (${pctTopics}%)`;
+            }
+        }
+
+        window.postNote = function() {
+            const authorInput = document.getElementById('note-author');
+            const textInput = document.getElementById('note-text');
+
+            const author = authorInput?.value.trim() || "Vernon";
+            const text = textInput?.value.trim();
+
+            if (!text) return;
+
+            const newNote = {
+                id: 'rpm_note_' + Date.now() + '_' + Math.random().toString(36).substring(2, 6),
+                author: author,
+                text: text,
+                timestamp: new Date().toLocaleDateString()
+            };
+
+            notesState.unshift(newNote);
+            localStorage.setItem('val_rpm_notes_backup', JSON.stringify(notesState));
+            renderNotes(notesState);
+            if (textInput) textInput.value = '';
+
+            confetti({ particleCount: 25, spread: 60, origin: { y: 0.8 } });
+            scheduleCloudSave();
+        };
+
+        function renderNotes(notes) {
+            const container = document.getElementById('notes-container');
+            if (!container) return;
+
+            if (!notes || notes.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-6 text-slate-400 text-sm col-span-2">
+                        No notes yet! Write a sweet message above 🌷
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = notes.map(n => `
+                <div class="p-4 rounded-2xl bg-gradient-to-br from-pink-50 via-white to-purple-50 border border-pink-200 shadow-xs">
+                    <div class="flex justify-between items-center mb-1.5">
+                        <span class="font-bold text-xs text-tulip-700">🌷 ${n.author || 'Vernon'}</span>
+                        <span class="text-[10px] text-slate-400 font-medium px-2 py-0.5 rounded-full bg-pink-50">
+                            ${n.timestamp || 'Recent'}
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">${n.text}</p>
+                </div>
+            `).join('');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initSyncEngine();
+        });
+    </script>
+
+    <!-- UI INTERACTIONS, PEP TALKS & POMODORO TIMER -->
+    <script>
+        const PEP_TALKS = {
+            tired: [
+                "🌷 Rest your eyes for 15 minutes, my love! Even tulips need rest to bloom. Your brain consolidates memory while you rest!",
+                "💖 Go drink some water and stretch, Val! You've been working so hard today. I'm so proud of your discipline!",
+                "✨ A tired review session means you gave it your effort today. Take a guilt-free nap, my future RPm!"
+            ],
+            overwhelmed: [
+                "🧠 Deep breath in, deep breath out! You don't have to memorize the entire DSM-5-TR or PAPR code in one sitting—just focus on one page at a time.",
+                "🌷 Remember how you conquered BS Psychology as Cum Laude at NU MOA? You already have the foundation inside you!",
+                "💌 Break it down into small pieces, my Val. Even mastering 2 concepts today puts you closer to that RPm license!"
+            ],
+            doubt: [
+                "🎓 Look at your name at the top of this page: Leila Ghez Torda, RPm! That title is what you are working toward. Keep going!",
+                "💖 It's completely normal to feel nervous before a big dream. Whenever you doubt yourself, borrow my confidence in you—because I believe in you 1000%!",
+                "🌟 You graduated Cum Laude through your hard work and heart. The BLEPP board exam is just your next victory lap!"
+            ],
+            hug: [
+                "🤗 *Sending the biggest, warmest virtual hug to my dearest Val!* I love you endlessly and I'm cheering for you always! 🌷💖",
+                "💕 *Tightest hug from Vernon!* You are never alone in this review journey. Tell me whenever you want food or a study break!",
+                "🌷 *Wrapped in a blanket of tulips and hugs!* You are doing amazing, my future Registered Psychometrician!"
+            ]
+        };
+
+        function showPepTalk(category) {
+            const list = PEP_TALKS[category] || PEP_TALKS.hug;
+            const message = list[Math.floor(Math.random() * list.length)];
+            const box = document.getElementById('pep-talk-display');
+            const textEl = document.getElementById('pep-talk-text');
+
+            if (box && textEl) {
+                textEl.textContent = message;
+                box.classList.remove('hidden');
+                confetti({
+                    particleCount: 20,
+                    spread: 50,
+                    origin: { y: 0.4 },
+                    colors: ['#f472b6', '#c084fc', '#fb7185']
+                });
+            }
+        }
+
+        function celebrateRPm() {
+            confetti({
+                particleCount: 70,
+                spread: 90,
+                origin: { y: 0.35 },
+                colors: ['#ec4899', '#8b5cf6', '#f59e0b', '#10b981']
+            });
+            showPepTalk('doubt');
+        }
+
+        function triggerHeartShower() {
+            confetti({
+                particleCount: 60,
+                spread: 85,
+                origin: { y: 0.5 },
+                colors: ['#f472b6', '#ec4899', '#c084fc', '#10b981']
+            });
+        }
+
+        // POMODORO TIMER LOGIC
+        let timerSeconds = 25 * 60;
+        let defaultMinutes = 25;
+        let timerInterval = null;
+        let timerRunning = false;
+
+        function setTimerMode(minutes, label) {
+            pauseTimer();
+            defaultMinutes = minutes;
+            timerSeconds = minutes * 60;
+            const labelEl = document.getElementById('timer-label');
+            if (labelEl) labelEl.textContent = label;
+            updateTimerDisplay();
+        }
+
+        function updateTimerDisplay() {
+            const mins = Math.floor(timerSeconds / 60);
+            const secs = timerSeconds % 60;
+            const display = document.getElementById('timer-display');
+            if (display) {
+                display.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+            }
+        }
+
+        function toggleTimer() {
+            if (timerRunning) {
+                pauseTimer();
+            } else {
+                startTimer();
+            }
+        }
+
+        function startTimer() {
+            if (timerRunning) return;
+            timerRunning = true;
+            document.getElementById('timer-btn-text').textContent = 'Pause';
+            document.getElementById('timer-play-icon').className = 'fa-solid fa-pause';
+
+            timerInterval = setInterval(() => {
+                if (timerSeconds > 0) {
+                    timerSeconds--;
+                    updateTimerDisplay();
+                } else {
+                    pauseTimer();
+                    confetti({ particleCount: 80, spread: 100, origin: { y: 0.6 } });
+                    showPepTalk('hug');
+                }
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            timerRunning = false;
+            if (timerInterval) clearInterval(timerInterval);
+            const btnText = document.getElementById('timer-btn-text');
+            const playIcon = document.getElementById('timer-play-icon');
+            if (btnText) btnText.textContent = 'Start Review';
+            if (playIcon) playIcon.className = 'fa-solid fa-play';
+        }
+
+        function resetTimer() {
+            pauseTimer();
+            timerSeconds = defaultMinutes * 60;
+            updateTimerDisplay();
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.add('hidden');
+                el.classList.remove('block');
+            });
+
+            const target = document.getElementById(tabId);
+            if (target) {
+                target.classList.remove('hidden');
+                target.classList.add('block');
+            }
+
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = "tab-btn font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-t-xl text-slate-500 hover:text-tulip-600 transition flex items-center gap-2";
+            });
+
+            const activeBtn = document.getElementById(`btn-${tabId}`);
+            if (activeBtn) {
+                activeBtn.className = "tab-btn active font-bold text-xs sm:text-sm px-4 py-2.5 rounded-t-xl bg-white border-t-2 border-x border-pink-300 text-tulip-700 shadow-sm flex items-center gap-2";
+            }
+        }
+
+        function createFloatingHearts() {
+            const container = document.getElementById('heart-container');
+            if (!container) return;
+            const symbols = ['🌷', '🌸', '💖', '✨', 'Ψ', '💕'];
+            
+            for (let i = 0; i < 16; i++) {
+                const el = document.createElement('div');
+                el.className = 'heart-particle';
+                el.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+                el.style.left = `${Math.random() * 100}vw`;
+                el.style.animationDelay = `${Math.random() * 7}s`;
+                el.style.fontSize = `${16 + Math.random() * 18}px`;
+                container.appendChild(el);
+            }
+        }
+
+        window.onload = function() {
+            createFloatingHearts();
+        };
+    </script>
+</body>
+</html>
